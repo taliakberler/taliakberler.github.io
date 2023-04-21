@@ -2,9 +2,9 @@
 
 body {
     font-family: 'Montserrat','Roboto', 'Arial', sans-serif;
-    line-height: 1.5;
+    line-height: 2;
     display: grid;
-    grid-template-columns: 1fr 3fr;
+    grid-template-columns: 1fr 4fr;
     grid-gap: 20px;
     max-width: 960px;
     margin: 20px auto;
@@ -18,6 +18,12 @@ footer {
 
 section {
   background-color: #75e6dba8;
+  padding: 20px;
+}
+
+table {
+  background-color: #778e9988;
+  padding: 0 10px;
 }
 
 a,
@@ -49,6 +55,62 @@ main {
     grid-gap: 20px;
 }
 
+#people {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas: 
+  "masthead     masthead"
+  "ethnicity    age"
+  "population   population";
+  /* grid-gap: 20px; */
+}
+
+#people > h2 {
+  grid-area: masthead;
+}
+
+#ethnic {
+  grid-area: ethnicity;
+}
+
+#age {
+  grid-area: age;
+}
+
+#pop {
+  grid-area: population;
+}
+
+#government {
+  display: grid;
+  grid-template-columns: 2fr 2fr;
+  grid-template-areas:  
+  "masthead masthead"
+  "name   name"
+  "flag   flag"
+  "symbols  colors";
+}
+
+#government > h2 {
+  grid-area: masthead;
+}
+
+#name {
+  grid-area: name;
+}
+
+#flag {
+  grid-area: flag;
+}
+
+#symbols {
+  grid-area: symbols;
+}
+
+#colors {
+  grid-area: colors;
+}
+
 header,
 footer {
   padding: 0 20px;
@@ -59,14 +121,19 @@ nav {
     line-height: 2;
 }
 
-section {
-  padding: 20px;
-}
-
 h2 {
   margin-top: 0;
+  margin-bottom: 0;
 }
 
 p {
   margin: 0;
+}
+
+figure {
+  margin: 20px;
+}
+
+figcaption {
+  font-size: 14px;
 }
