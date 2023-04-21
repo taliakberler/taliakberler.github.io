@@ -28,7 +28,7 @@ table {
 
 a,
 a:link {
-  color: rgb(28, 69, 150);
+  color: rgb(194, 151, 42);
 }
 
 a:visited {
@@ -62,7 +62,6 @@ main {
   "masthead     masthead"
   "ethnicity    age"
   "population   population";
-  /* grid-gap: 20px; */
 }
 
 #people > h2 {
@@ -131,7 +130,7 @@ p {
 }
 
 figure {
-  margin: 20px;
+  margin: 20px auto;
 }
 
 figcaption {
