@@ -79,8 +79,14 @@ footer {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
-    grid-template-areas: none;
+    grid-template-areas: 
+    "header"
+    "ed"
+    "lead"
+    "exp"
+    "skill";
 }
+
 
 #education {
     grid-area: ed;
