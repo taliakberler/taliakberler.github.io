@@ -63,12 +63,8 @@ footer{
 section,
 article {
   background-color: #9adf8575;
-  padding: 0 20px;
+  padding: 20px;
   margin: 20px 0;
-}
-
-section p {
-  margin-bottom: 0;
 }
 
 object {
