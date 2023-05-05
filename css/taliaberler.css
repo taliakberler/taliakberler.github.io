@@ -7,7 +7,7 @@ body {
     color: #222;
     line-height: 1.5;
     max-width: 960px;
-    margin: 20px auto;
+    margin: 0 auto;
     display: grid;
     grid-template-columns: 1fr 2fr;
     grid-gap: 20px;
@@ -43,7 +43,6 @@ h3 {
 
 footer p {
   font-size: 14px;
-  background-color: #ddd;
 }
 
 section,
