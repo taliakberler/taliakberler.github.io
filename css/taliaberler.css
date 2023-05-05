@@ -50,6 +50,7 @@ section,
 article {
   background-color: #ddd;
   padding: 20px;
+  margin: 10px 0;
 }
 
 section p {
@@ -95,4 +96,21 @@ footer {
 
 #skills {
     grid-area: skill;
+}
+
+#photo > main {
+    grid-template-areas: 
+    "header header"
+    ". section"
+    ". section"
+    ". section"
+    ". section"
+    ". section"
+    ". section"
+    ". section";
+}
+
+figcaption {
+    font-size: 14px;
+    padding: 10px 20px;
 }
