@@ -20,18 +20,20 @@ body {
 
 nav > ul {
     list-style-type: none;
-    margin: 0;
-    padding: 0 30px;
+    margin: 0 30px;
+    padding: 0;
     overflow: hidden;
     background-color: #9adf8575;
 }
   
 li > a {
     float: left;
+
 }
 
-p {
+header > p {
     background-color: #9adf8575;
+    padding: 20px;
 }
 
 
