@@ -20,7 +20,7 @@ body {
 
 nav > ul {
     list-style-type: none;
-    margin: 0 30px;
+    margin: 0;
     padding: 10px;
     overflow: hidden;
     background-color: #9adf8575;
