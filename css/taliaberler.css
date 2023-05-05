@@ -18,30 +18,16 @@ body {
         "footer";
 }
 
-#index {
-    display: grid;
-    grid-template-columns: 1fr 2fr;
-    grid-gap: 20px;
-    grid-template-areas: 
-        "header header"
-        "nav main"
-        "footer footer";
+nav > ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #9adf8575;
 }
-
-#index > header {
-    grid-area: header;
-}
-
-#index > nav {
-    grid-area: nav;
-}
-
-#index > main {
-    grid-area: main;
-}
-
-#index > footer {
-    grid-area: footer;
+  
+li {
+    float: left;
 }
 
 a,
@@ -85,12 +71,15 @@ section p {
   margin-bottom: 0;
 }
 
+object {
+    margin: 20px auto;
+}
 
-nav {
+/* nav {
     background-color: #9adf8575;
     grid-area: nav;
     padding: 10px 20px;
-}
+} */
 
 figcaption {
     font-size: 16px;
