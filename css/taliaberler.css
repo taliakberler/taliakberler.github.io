@@ -43,6 +43,7 @@ h3 {
 
 footer p {
   font-size: 14px;
+  text-align: center;
 }
 
 section,
@@ -61,7 +62,8 @@ header {
 }
 
 nav {
-  grid-area: nav;
+    background-color: #ddd;
+    grid-area: nav;
 }
 
 main {
