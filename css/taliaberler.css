@@ -21,14 +21,14 @@ body {
 nav > ul {
     list-style-type: none;
     margin: 0 30px;
-    padding: 0;
+    padding: 10px;
     overflow: hidden;
     background-color: #9adf8575;
 }
   
 li > a {
     float: left;
-
+    margin: 0 30px;
 }
 
 header > p {
