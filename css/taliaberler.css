@@ -43,10 +43,11 @@ h3 {
 
 footer p {
   font-size: 14px;
-  color: #666;
+  background-color: #ddd;
 }
 
-section {
+section,
+article {
   background-color: #ddd;
   padding: 20px;
 }
