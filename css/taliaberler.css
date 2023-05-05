@@ -26,9 +26,14 @@ nav > ul {
     background-color: #9adf8575;
 }
   
-#navigation > li {
+li > a {
     float: left;
 }
+
+p {
+    background-color: #9adf8575;
+}
+
 
 a,
 a:link {
@@ -57,7 +62,6 @@ h3 {
 footer{
   font-size: 14px;
   text-align: center;
-  background-color: #9adf8575;
 }
 
 section,
