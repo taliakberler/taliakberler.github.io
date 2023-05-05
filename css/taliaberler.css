@@ -75,7 +75,7 @@ footer {
   grid-area: footer;
 }
 
-#resume > main {
+#resume {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
@@ -87,7 +87,9 @@ footer {
     "skill";
 }
 
-
+#resume > header {
+    grid-area: header;
+}
 #education {
     grid-area: ed;
 }
