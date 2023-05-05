@@ -45,3 +45,33 @@ footer p {
   font-size: 14px;
   color: #666;
 }
+
+header,
+footer {
+  padding-left: 20px;
+}
+
+section {
+  background-color: #ddd;
+  padding: 20px;
+}
+
+section p {
+  margin-bottom: 0;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: nav;
+}
+
+main {
+  grid-area: main;
+}
+
+footer {
+  grid-area: footer;
+}
