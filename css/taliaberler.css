@@ -44,7 +44,6 @@ h3 {
 footer p {
   font-size: 14px;
   text-align: center;
-  background-color: #ddd;
 }
 
 section,
@@ -76,13 +75,11 @@ footer {
   grid-area: footer;
 }
 
-#resume > main {
-    grid-template-areas: 
-        "header header"
-        "ed ed"
-        "lead lead"
-        "exp exp"
-        "skill skill";
+#resume > main,
+#photo > main {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
 }
 
 #education {
@@ -99,18 +96,6 @@ footer {
 
 #skills {
     grid-area: skill;
-}
-
-#photo > main {
-    grid-template-areas: 
-    "header header"
-    ". section"
-    ". section"
-    ". section"
-    ". section"
-    ". section"
-    ". section"
-    ". section";
 }
 
 figcaption {
