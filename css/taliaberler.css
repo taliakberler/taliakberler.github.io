@@ -46,11 +46,6 @@ footer p {
   color: #666;
 }
 
-header,
-footer {
-  padding-left: 20px;
-}
-
 section {
   background-color: #ddd;
   padding: 20px;
