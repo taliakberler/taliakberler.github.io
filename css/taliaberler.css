@@ -75,3 +75,28 @@ main {
 footer {
   grid-area: footer;
 }
+
+#resume > main {
+    grid-template-areas: 
+        "header header"
+        "ed ed"
+        "lead lead"
+        "exp exp"
+        "skill skill";
+}
+
+#education {
+    grid-area: ed;
+}
+
+#leadership {
+    grid-area: lead;
+}
+
+#experience {
+    grid-area: exp;
+}
+
+#skills {
+    grid-area: skill;
+}
