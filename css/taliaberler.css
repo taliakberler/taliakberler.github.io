@@ -18,6 +18,32 @@ body {
         "footer";
 }
 
+#index {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    grid-gap: 20px;
+    grid-template-areas: 
+        "header header"
+        "nav main"
+        "footer footer";
+}
+
+#index > header {
+    grid-area: header;
+}
+
+#index > nav {
+    grid-area: nav;
+}
+
+#index > main {
+    grid-area: main;
+}
+
+#index > footer {
+    grid-area: footer;
+}
+
 a,
 a:link {
   color: rgb(15, 67, 171);
@@ -59,53 +85,11 @@ section p {
   margin-bottom: 0;
 }
 
-header {
-  grid-area: header;
-}
 
 nav {
     background-color: #9adf8575;
     grid-area: nav;
     padding: 10px 20px;
-}
-
-main {
-  grid-area: main;
-}
-
-footer {
-  grid-area: footer;
-}
-
-#resume {
-    display: grid;
-    grid-template-columns: 1fr;
-    grid-gap: 20px;
-    grid-template-areas: 
-    "header"
-    "ed"
-    "lead"
-    "exp"
-    "skill";
-}
-
-#resume > header {
-    grid-area: header;
-}
-#education {
-    grid-area: ed;
-}
-
-#leadership {
-    grid-area: lead;
-}
-
-#experience {
-    grid-area: exp;
-}
-
-#skills {
-    grid-area: skill;
 }
 
 figcaption {
