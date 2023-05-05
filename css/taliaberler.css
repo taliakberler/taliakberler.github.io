@@ -42,14 +42,15 @@ h3 {
   font-weight: 700;
 }
 
-footer p {
+footer{
   font-size: 14px;
   text-align: center;
+  background-color: #9adf8575;
 }
 
 section,
 article {
-  background-color: #9adf85c1;
+  background-color: #9adf8575;
   padding: 0 20px;
   margin: 20px 0;
 }
@@ -63,7 +64,7 @@ header {
 }
 
 nav {
-    background-color: #9adf85c1;
+    background-color: #9adf8575;
     grid-area: nav;
     padding: 10px 20px;
 }
