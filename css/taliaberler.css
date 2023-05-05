@@ -75,11 +75,11 @@ footer {
   grid-area: footer;
 }
 
-#resume > main,
-#photo > main {
+#resume > main {
     display: grid;
     grid-template-columns: 1fr;
     grid-gap: 20px;
+    grid-template-areas: none;
 }
 
 #education {
