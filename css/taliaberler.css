@@ -44,6 +44,7 @@ h3 {
 footer p {
   font-size: 14px;
   text-align: center;
+  background-color: #ddd;
 }
 
 section,
@@ -64,6 +65,7 @@ header {
 nav {
     background-color: #ddd;
     grid-area: nav;
+    padding: 10px 20px;
 }
 
 main {
@@ -112,6 +114,6 @@ footer {
 }
 
 figcaption {
-    font-size: 14px;
+    font-size: 16px;
     padding: 10px 20px;
 }
