@@ -43,11 +43,11 @@ a:link {
 }
 
 a:visited {
-  color: #501346; /* contrast ratio: 7.45:1 */
+  color: #ff82ea; /* contrast ratio: 7.45:1 */
 }
 
 a:hover {
-  color: rgb(201,53,68);
+  color: rgb(251, 251, 71);
 }
 
 a:active {
