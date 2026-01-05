@@ -11,7 +11,7 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/taliakberler.github.io/',
+  base: '/',
   build: {
     outDir: "docs",
   },
