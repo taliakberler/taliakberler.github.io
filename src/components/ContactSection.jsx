@@ -4,16 +4,31 @@ import {
     Phone,
     Send,
   } from "lucide-react";
-  import { SiGithub} from "@icons-pack/react-simple-icons";
+  import { SiGithub } from "@icons-pack/react-simple-icons";
   import linkedinLogo from "../assets/in-logo/InBug-Black.png";
   import { cn } from "@/lib/utils";
   import { useToast } from "@/hooks/use-toast";
-  import { useState } from "react";
-  
+  import { useState, useEffect } from "react";
+    
   export const ContactSection = () => {
     const { toast } = useToast();
     const [isSubmitting, setIsSubmitting] = useState(false);
-  
+    const [isDarkMode, setIsDarkMode] = useState(false);
+    
+    useEffect(() => {
+      // Check initial theme from localStorage
+      const theme = localStorage.getItem("theme");
+      setIsDarkMode(theme === "dark");
+      
+      // Create interval to check for theme changes
+      const checkTheme = setInterval(() => {
+        const currentTheme = localStorage.getItem("theme");
+        setIsDarkMode(currentTheme === "dark");
+      }, 100);
+      
+      return () => clearInterval(checkTheme);
+    }, []);
+
     const handleSubmit = (e) => {
       e.preventDefault();
   
@@ -46,12 +61,12 @@ import {
                 Contact Information
               </h3>
   
-              <div className="space-y-6 justify-center">
-                <div className="flex items-start space-x-4">
+              <div className="space-y-6">
+                <div className="flex flex-col items-center space-y-2">
                   <div className="p-3 rounded-full bg-primary/10">
                     <Mail className="h-6 w-6 text-primary" />{" "}
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h4 className="font-medium"> Email</h4>
                     <a
                       href="mailto:taliakberler@gmail.com"
@@ -61,11 +76,11 @@ import {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex flex-col items-center space-y-2">
                   <div className="p-3 rounded-full bg-primary/10">
                     <Phone className="h-6 w-6 text-primary" />{" "}
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h4 className="font-medium"> Phone</h4>
                     <a
                       href="tel:+13057102434"
@@ -75,11 +90,11 @@ import {
                     </a>
                   </div>
                 </div>
-                <div className="flex items-start space-x-4">
+                <div className="flex flex-col items-center space-y-2">
                   <div className="p-3 rounded-full bg-primary/10">
                     <MapPin className="h-6 w-6 text-primary" />{" "}
                   </div>
-                  <div>
+                  <div className="text-center">
                     <h4 className="font-medium"> Location</h4>
                     <a className="text-muted-foreground hover:text-primary transition-colors">
                       Miami, FL, USA
@@ -91,14 +106,22 @@ import {
               <div className="pt-8">
                 <h4 className="font-medium mb-4"> Connect With Me</h4>
                 <div className="flex space-x-4 justify-center">
-                  <a href="#" target="_blank">
+                  <a href="https://github.com/taliakberler" target="_blank">
                     <SiGithub />
                   </a>
                   <a
                     href="http://www.linkedin.com/in/talia-berler"
                     target="_blank"
                   >
-                    <img src={linkedinLogo} alt="LinkedIn" style={{ width: "24px", height: "24px" }} />
+                    <img 
+                      src={linkedinLogo} 
+                      alt="LinkedIn" 
+                      style={{ 
+                        width: "24px", 
+                        height: "24px", 
+                        filter: isDarkMode ? "invert(1) brightness(0) contrast(200%)" : "none"
+                      }}
+                    />
                   </a>
                 </div>
               </div>
@@ -125,7 +148,7 @@ import {
                     name="name"
                     required
                     className="w-full px-4 py-3 rounded-md border border-input bg-background focus:outline-hidden foucs:ring-2 focus:ring-primary"
-                    placeholder="Talia Berler..."
+                    placeholder="First Last..."
                   />
                 </div>
   
