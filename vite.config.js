@@ -11,8 +11,8 @@ export default defineConfig({
       "@": path.resolve(__dirname, "./src"),
     },
   },
-  base: '/',
-  build: {
-    outDir: "dist",
-  },
+  // base: '/',
+  // build: {
+  //   outDir: "dist",
+  // },
 });
