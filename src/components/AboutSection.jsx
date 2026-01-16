@@ -12,20 +12,19 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Passionate Web Developer & Tech Creator
+              Data Scientist | AI App Developer | Geospatial Analyst
             </h3>
 
             <p className="text-muted-foreground">
-              With over 5 years of experience in web development, I specialize
-              in creating responsive, accessible, and performant web
-              applications using modern technologies.
+              With over 2 years of experience in data science and near completion of a masters of 
+              data science, I specialize in data wrangling, building ML pipelines for prediction 
+              and classification, and communicating results into clear and actionable insights.
             </p>
 
             <p className="text-muted-foreground">
-              I'm passionate about creating elegant solutions to complex
-              problems, and I'm constantly learning new technologies and
-              techniques to stay at the forefront of the ever-evolving web
-              landscape.
+            I'm passionate about the intersection of data science, AI, and geospatial technology 
+            for the optimization of business and human-centric processes. I'm a collaborative
+            and curious individual, so I'm constantly learning and seeking like-minded individuals.
             </p>
 
             <div className="flex flex-col sm:flex-row gap-4 pt-4 justify-center">
