@@ -5,7 +5,8 @@ import {
     Send,
   } from "lucide-react";
   import { SiGithub } from "@icons-pack/react-simple-icons";
-  import linkedinLogo from "../assets/in-logo/InBug-Black.png";
+  import linkedinLogoBlack from "../assets/in-logo/InBug-Black.png";
+  import linkedinLogoWhite from "../assets/in-logo/InBug-White.png";
   import { cn } from "@/lib/utils";
   import { useToast } from "@/hooks/use-toast";
   import { useState, useEffect } from "react";
@@ -114,12 +115,11 @@ import {
                     target="_blank"
                   >
                     <img 
-                      src={linkedinLogo} 
+                      src={isDarkMode ? linkedinLogoWhite : linkedinLogoBlack} 
                       alt="LinkedIn" 
                       style={{ 
                         width: "24px", 
-                        height: "24px", 
-                        filter: isDarkMode ? "invert(1) brightness(0) contrast(200%)" : "none"
+                        height: "24px"
                       }}
                     />
                   </a>
