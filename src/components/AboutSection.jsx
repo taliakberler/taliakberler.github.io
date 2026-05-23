@@ -12,18 +12,16 @@ export const AboutSection = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
           <div className="space-y-6">
             <h3 className="text-2xl font-semibold">
-              Data Scientist | AI App Developer | Geospatial Analyst
+              Data Scientist | Geospatial Analyst | Writer
             </h3>
 
             <p className="text-muted-foreground">
-              With over 2 years of experience in data science and near completion of a masters of 
-              data science, I specialize in data wrangling, building ML pipelines for prediction 
-              and classification, and communicating results into clear and actionable insights.
+              I specialize in data analytics and science and geospatial analysis in applications in NLP, agentic applications, and climate hazard assessment.
             </p>
 
             <p className="text-muted-foreground">
             I'm passionate about the intersection of data science, AI, and geospatial technology 
-            for the optimization of business and human-centric processes. I'm a collaborative
+            for the optimization of urban areas and human-centric processes. I'm a collaborative
             and curious individual, so I'm constantly learning and seeking like-minded individuals.
             </p>
 
@@ -52,10 +50,9 @@ export const AboutSection = () => {
                   <Code className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg"> Web Development</h4>
+                  <h4 className="font-semibold text-lg"> Data Science</h4>
                   <p className="text-muted-foreground">
-                    Creating responsive websites and web applications with
-                    modern frameworks.
+                    Running evaluation of algorithms, building data pipelines, and creating visualizations to communicate insights.
                   </p>
                 </div>
               </div>
@@ -66,10 +63,9 @@ export const AboutSection = () => {
                   <User className="h-6 w-6 text-primary" />
                 </div>
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">UI/UX Design</h4>
+                  <h4 className="font-semibold text-lg">Geospatial Analysis</h4>
                   <p className="text-muted-foreground">
-                    Designing intuitive user interfaces and seamless user
-                    experiences.
+                    Preparing and analyzing geospatial data, creating maps and visualizations, and applying spatial analysis techniques to solve real-world problems.
                   </p>
                 </div>
               </div>
@@ -81,10 +77,9 @@ export const AboutSection = () => {
                 </div>
 
                 <div className="text-left">
-                  <h4 className="font-semibold text-lg">Project Management</h4>
+                  <h4 className="font-semibold text-lg">Writer</h4>
                   <p className="text-muted-foreground">
-                    Leading projects from conception to completion with agile
-                    methodologies.
+                    Generating data stories with interactive visualizations about climate change and urban issues.
                   </p>
                 </div>
               </div>

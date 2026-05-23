@@ -3,10 +3,10 @@ import { ArrowRight, ExternalLink, Github } from "lucide-react";
 const projects = [
   {
     id: 1,
-    title: "SaaS Landing Page",
-    description: "A beautiful landing page app using React and Tailwind.",
+    title: "Cancer Type Classification with NLP",
+    description: "A logistic regression model with TF-IDF features to classify cancer types from clinical literature, contributing to the largest publicly available annotated cancer literature dataset on HuggingFace.",
     image: "/projects/project1.png",
-    tags: ["React", "TailwindCSS", "Supabase"],
+    tags: ["Python", "Scikit-learn", "Pandas"],
     demoUrl: "#",
     githubUrl: "#",
   },
@@ -22,13 +22,13 @@ const projects = [
   },
   {
     id: 3,
-    title: "E-commerce Platform",
+    title: "Climate Change Inequity Data Story",
     description:
-      "Full-featured e-commerce platform with user authentication and payment processing.",
+      "Interactive data story exploring the disproportionate impact and injustice of climate change on low-income nations.",
     image: "/projects/project3.png",
-    tags: ["React", "Node.js", "Stripe"],
-    demoUrl: "#",
-    githubUrl: "#",
+    tags: ["D3.js", "Geopandas"],
+    demoUrl: "https://taliakberler.github.io/Climate-Finance-Story/",
+    githubUrl: "https://github.com/taliakberler/Climate-Finance-Story",
   },
 ];
 
@@ -100,7 +100,7 @@ export const ProjectsSection = () => {
           <a
             className="cosmic-button w-fit flex items-center mx-auto gap-2"
             target="_blank"
-            href="https://github.com/taliakberler/DataScienceProjects"
+            href="https://github.com/taliakberler"
           >
             Check My Github <ArrowRight size={16} />
           </a>
