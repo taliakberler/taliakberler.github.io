@@ -26,15 +26,26 @@ change what the site says.
 
 ## Adding your files
 
-**Résumé.** Drop the one-page PDF at `public/TaliaBerlerResume.pdf`, then set
-`hasResume: true` in `src/data/contact.js`. Until then every "Résumé" link
-quietly points at the full CV instead of 404ing.
+**Résumé.** Lives at `public/TaliaBerlerResume.pdf`. To swap it, replace that
+file and keep the name. If you ever remove it, set `hasResume: false` in
+`src/data/contact.js` and every "Résumé" link falls back to the full CV rather
+than 404ing.
 
 **Updated CV.** Replace `public/TaliaBerlerCV.pdf` — the filename is referenced
 in a few places, so keep the name.
 
-**Project images.** Put them in `public/work/` and add
-`image: "/work/your-file.png"` to the relevant entry in `src/data/work.js`.
+**Project images.** Put them in `public/work/` and add `image` plus `imageAlt`
+to the relevant entry in `src/data/work.js`. Entries without an image render as
+a typographic card, so a missing thumbnail never breaks the layout. Export as
+WebP around 1400–1600px wide — roughly:
+
+```bash
+npx --yes sharp-cli -i shot.png -o public/work/name.webp resize 1600 -- webp --quality 86
+```
+
+The Miami Beach 3D scene is the one project still without a thumbnail — its
+ArcGIS item thumbnail is only 200×133 and the scene needs a real GPU to render,
+so a screenshot taken from your own browser is the way to fill it.
 
 **New project.** Copy any block in `src/data/work.js`. The only required fields
 are `slug`, `title`, `kind`, `org`, `year`, `summary` and `tags`; `note` and

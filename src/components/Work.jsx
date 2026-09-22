@@ -16,6 +16,25 @@ const Meta = ({ item, stacked }) =>
     </p>
   );
 
+/** Project thumbnail. Entries without an `image` simply render without one. */
+const Figure = ({ item, className = "" }) =>
+  !item.image ? null : (
+    <a
+      href={item.links[0]?.href}
+      target="_blank"
+      rel="noopener noreferrer"
+      className={`block overflow-hidden rounded-xl border border-line bg-paper-alt ${className}`}
+    >
+      <img
+        src={item.image}
+        alt={item.imageAlt || item.title}
+        loading="lazy"
+        decoding="async"
+        className="w-full transition-transform duration-500 hover:scale-[1.02]"
+      />
+    </a>
+  );
+
 const Tags = ({ tags }) => (
   <ul className="mt-6 flex flex-wrap gap-2">
     {tags.map((tag) => (
@@ -68,6 +87,8 @@ const Featured = ({ item }) => (
       </p>
     )}
 
+    <Figure item={item} className="mt-8" />
+
     <Tags tags={item.tags} />
     <Links links={item.links} />
   </article>
@@ -88,6 +109,8 @@ const Standard = ({ item }) => (
           {item.note}
         </p>
       )}
+
+      <Figure item={item} className="mt-6 max-w-2xl" />
 
       <Tags tags={item.tags} />
       <Links links={item.links} />

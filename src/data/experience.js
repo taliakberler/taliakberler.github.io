@@ -3,36 +3,44 @@
 export const experience = [
   {
     org: "Climate Resilience Institute",
-    role: "Graduate Resilience Intern",
+    role: "Research Associate, Resilience Finance Lab",
     place: "Coral Gables, FL",
-    period: "Sep 2025 — present",
+    period: "Jun 2026 — present",
     current: true,
     points: [
-      "Building the Resilience Finance Repository MVP, with AI enrichment, for 40+ stakeholders across the Resilience Finance Lab.",
-      "Ran main-stage operations for Resilience 365 — 350+ attendees, 90+ speakers, materials and logistics end to end.",
-      "Student Advocacy Council member since 2024: interdisciplinary resilience programming across University of Miami departments.",
+      "Leading design and build of the Resilience Finance Repository and Knowledge Graph — an AI-enriched literature collection and visualisation tracking climate resilience investment across the full value chain of interventions, to support evidence-based financing decisions.",
+      "Supporting the launch of the Resilience Finance Lab, a CRI initiative connecting resilience practice to capital allocation: coordinated on-site logistics for a 50-attendee working session and compiled materials for a mixed practitioner and investor audience.",
     ],
   },
   {
-    org: "UM Law & AI Lab (MiLA)",
-    role: "ClassInsight Project Lead · Research Assistant",
+    org: "Climate Resilience Institute",
+    role: "Graduate Resilience Intern",
+    place: "Coral Gables, FL",
+    period: "Aug 2025 — May 2026",
+    points: [
+      "Coordinated main-stage operations for the Resilience 365 conference, managing run-of-show and on-site logistics for 350+ attendees and 90+ industry-leading speakers.",
+      "Student Advocacy Council member: interdisciplinary resilience programming across University of Miami departments.",
+    ],
+  },
+  {
+    org: "Miami Law & AI Lab (MiLA)",
+    role: "ClassInsight Project Lead",
     place: "Coral Gables, FL",
     period: "Jul 2024 — May 2026",
     points: [
-      "Led development of ClassInsight, an agentic classroom-feedback application, through to an open-source-ready beta.",
-      "Built AI literacy among law students and faculty, and supported faculty adopting LLMs in research and teaching.",
-      "Helped the PI stand up a hub for interdisciplinary work at the intersection of AI and law.",
+      "Owned project management of a small team developing ClassInsight, an LLM-based real-time classroom-feedback application, from conception through prototype, beta and preparation for open-source release.",
+      "Led demos for 25+ educators and 150+ law students to gather user feedback and advance AI literacy and adoption among UM faculty and students.",
     ],
   },
   {
     org: "Moffitt Cancer Center — Valdes Lab",
-    role: "Research Trainee",
+    role: "Data Science Research Trainee",
     place: "Tampa, FL",
     period: "May 2025 — Nov 2025",
     points: [
-      "Led a month-long evaluation with an external consulting team across 6+ retrieval algorithms and 1M+ medical records.",
-      "Built benchmark datasets and a cancer-type classifier over the 692B-token Blue Scrubs v2.0 corpus.",
-      "Processed 500K+ clinical trial and guideline documents into production retrieval databases.",
+      "Led data collection strategy for a B2B health-tech SaaS, managing a small team sourcing and extracting clinical guideline text and increasing data volume by 67%.",
+      "Spearheaded evaluation of 6+ state-of-the-art retrieval algorithms across 1M+ medical text records, building benchmark medical Q&A datasets with LLM inference to optimise a clinical RAG system.",
+      "Developed an ML classification pipeline applying cancer-type labels to the largest publicly available annotated clinical text dataset, at 82% accuracy.",
     ],
   },
   {
@@ -43,26 +51,15 @@ export const experience = [
     points: [
       "Delivered sprint-based analytics for third-party clients, including companies and faculty researchers.",
       "Built a genetics-based product optimisation algorithm with feature ranking and multi-generational tracking.",
-      "Sentiment analysis and time-series visualisation over large political tweet datasets.",
-    ],
-  },
-  {
-    org: "Validit.ai",
-    role: "Development Intern",
-    place: "Tel Aviv, IL",
-    period: "Jun 2023 — Jul 2023",
-    points: [
-      "QA testing across a trust-verification application and its admin site.",
-      "Rebuilt the marketing site to present the product to investors and prospective clients.",
     ],
   },
 ];
 
 export const education = [
   {
-    degree: "M.Sc. Data Science",
+    degree: "M.Sc. Data Science — Smart Cities & GIS",
     school: "University of Miami",
-    detail: "SMART Cities & GIS concentration · GPA 4.00",
+    detail: "Award of Academic Merit · GPA 4.00",
     year: "May 2026",
   },
   {
