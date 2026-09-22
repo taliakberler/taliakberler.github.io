@@ -39,3 +39,5 @@ out/
 
 # OS files
 .DS_Store
+# Claude Code worktrees (full repo copies — never commit these)
+.claude/worktrees/
