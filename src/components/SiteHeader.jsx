@@ -2,7 +2,7 @@ import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
 
 const navItems = [
-  { label: "Approach", href: "#approach" },
+  { label: "Skills", href: "#skills" },
   { label: "Work", href: "#work", },
   { label: "Experience", href: "#experience" },
   { label: "Writing", href: "#writing" },

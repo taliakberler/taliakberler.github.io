@@ -12,7 +12,7 @@ export const contact = {
   title: "Climate Resilience · Geospatial Data Science",
   // Contacts apps render this one; keep it plain ASCII so every client agrees.
   vcardTitle: "Research Associate, Resilience Finance Lab",
-  tagline: "Building the evidence behind climate resilience decisions.",
+  tagline: "Geospatial analysis and climate resilience finance.",
   location: "New York, NY",
   organization: "Climate Resilience Institute",
   email: "taliakberler@gmail.com",

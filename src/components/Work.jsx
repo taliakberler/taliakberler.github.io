@@ -81,11 +81,7 @@ const Featured = ({ item }) => (
 
     <p className="mt-5 max-w-2xl text-[1.0625rem] leading-relaxed text-ink-soft">{item.summary}</p>
 
-    {item.note && (
-      <p className="mt-5 max-w-2xl border-l-2 border-green/30 pl-4 text-[0.9375rem] italic leading-relaxed text-ink-soft">
-        {item.note}
-      </p>
-    )}
+    {item.credit && <p className="mt-4 text-sm text-ink-faint">{item.credit}</p>}
 
     <Figure item={item} className="mt-8" />
 
@@ -104,11 +100,7 @@ const Standard = ({ item }) => (
       <h3 className="font-display text-2xl font-semibold leading-snug">{item.title}</h3>
       <p className="mt-4 max-w-2xl leading-relaxed text-ink-soft">{item.summary}</p>
 
-      {item.note && (
-        <p className="mt-4 max-w-2xl border-l-2 border-line pl-4 text-[0.9375rem] italic leading-relaxed text-ink-faint">
-          {item.note}
-        </p>
-      )}
+      {item.credit && <p className="mt-3 text-sm text-ink-faint">{item.credit}</p>}
 
       <Figure item={item} className="mt-6 max-w-2xl" />
 
@@ -125,10 +117,7 @@ export const Work = () => {
   return (
     <section id="work" className="border-b border-line py-20 md:py-28">
       <div className="shell">
-        <p className="eyebrow">Selected work</p>
-        <h2 className="section-title mt-4 max-w-2xl">
-          Analysis built to be used, not just delivered
-        </h2>
+        <h2 className="section-title">Selected work</h2>
 
         <div className="mt-12 space-y-12">
           {featured.map((item) => (

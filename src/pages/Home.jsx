@@ -1,6 +1,6 @@
 import { SiteHeader } from "@/components/SiteHeader";
 import { Hero } from "@/components/Hero";
-import { Approach } from "@/components/Approach";
+import { Skills } from "@/components/Skills";
 import { Work } from "@/components/Work";
 import { Experience } from "@/components/Experience";
 import { Writing } from "@/components/Writing";
@@ -12,7 +12,7 @@ export const Home = () => (
     <SiteHeader />
     <main>
       <Hero />
-      <Approach />
+      <Skills />
       <Work />
       <Experience />
       <Writing />

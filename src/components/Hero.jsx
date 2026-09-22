@@ -21,15 +21,9 @@ export const Hero = () => (
         {hero.name}
       </h1>
 
-      <p
-        className="mt-7 max-w-2xl animate-rise text-lg leading-relaxed text-ink-soft opacity-0 md:text-xl"
-        style={{ animationDelay: "120ms" }}
-      >
-        {hero.lead}
-      </p>
 
       <p
-        className="mt-5 animate-rise text-sm text-ink-faint opacity-0"
+        className="mt-6 max-w-2xl animate-rise text-sm leading-relaxed text-ink-faint opacity-0"
         style={{ animationDelay: "180ms" }}
       >
         {hero.meta}

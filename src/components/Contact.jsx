@@ -29,13 +29,12 @@ export const Contact = () => (
   <section id="contact" className="bg-forest py-20 text-paper md:py-28">
     <div className="shell grid gap-14 md:grid-cols-2 md:gap-20">
       <div>
-        <p className="font-sans text-xs font-semibold uppercase tracking-[0.18em] text-green-light">
-          {contactCopy.eyebrow}
-        </p>
-        <h2 className="mt-4 font-display text-3xl font-semibold leading-tight text-paper md:text-4xl">
+        <h2 className="font-display text-3xl font-semibold leading-tight text-paper md:text-4xl">
           {contactCopy.title}
         </h2>
-        <p className="mt-6 max-w-md leading-relaxed text-paper/70">{contactCopy.body}</p>
+        <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-paper/70">
+          {contactCopy.body}
+        </p>
 
         <p className="mt-8 flex items-center gap-2 text-sm text-paper/60">
           <MapPin className="h-4 w-4 text-green-light" />

@@ -35,8 +35,7 @@ const Credential = ({ item, sub }) => (
 export const Writing = () => (
   <section id="writing" className="border-b border-line py-20 md:py-28">
     <div className="shell">
-      <p className="eyebrow">Publications</p>
-      <h2 className="section-title mt-4 max-w-2xl">Peer-reviewed and preprint work</h2>
+      <h2 className="section-title">Publications</h2>
 
       <ol className="mt-12">
         {publications.map((pub) => (

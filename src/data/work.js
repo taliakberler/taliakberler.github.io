@@ -1,8 +1,11 @@
 // Selected work. `featured: true` gets the large treatment at the top.
 //
-// To add a project: copy a block. Drop any image into public/work/ and set
-// `image`. Entries without an image render as a typographic card, so nothing
-// breaks while assets are still coming.
+// Descriptions are deliberately short — one or two factual sentences. Expand
+// any of them freely; the layout doesn't care how long they are.
+//
+// `credit` is for awards, collaborators and where the work ran. Drop any image
+// into public/work/ and set `image`; entries without one render as a
+// typographic card.
 
 export const work = [
   {
@@ -13,9 +16,7 @@ export const work = [
     org: "Independent",
     year: "2026",
     summary:
-      "A scrollytelling investigation into who caused the climate crisis and who is paying to adapt to it. High and upper-middle income countries produced 80% of 2024 emissions; the countries least responsible are the least prepared. The piece walks a general reader from that asymmetry through to where mitigation and adaptation finance is actually going.",
-    note:
-      "The clearest evidence of how I work: original analysis of ND-GAIN, emissions and climate-finance data, built into something a non-technical reader will finish.",
+      "A scrollytelling data story on who is responsible for global emissions, who is most exposed to the results, and where mitigation and adaptation finance is going. Built from ND-GAIN Country Index, emissions and climate finance data.",
     tags: ["D3.js", "GeoPandas", "Scrollytelling", "Data journalism"],
     links: [
       { label: "Read the story", href: "https://taliakberler.github.io/Climate-Finance-Story/" },
@@ -29,9 +30,7 @@ export const work = [
     org: "Climate Resilience Institute",
     year: "2025 — present",
     summary:
-      "Leading design and build of an AI-enriched literature collection and visualisation that tracks climate resilience investment across the full value chain of interventions — so that financing and funding decisions can be made against evidence rather than intuition.",
-    note:
-      "A knowledge graph rather than a document dump: the structure is what lets you see which parts of the value chain are well funded and which the field keeps asking about but never answers.",
+      "An AI-enriched literature collection and visualisation tracking climate resilience investment across the full value chain of interventions, supporting evidence-based financing decisions at the Resilience Finance Lab.",
     tags: ["LLM enrichment", "Knowledge graph", "Retrieval", "Stakeholder research"],
     links: [],
   },
@@ -45,7 +44,7 @@ export const work = [
     imageAlt:
       "Tableau dashboard showing urban heat island intensity, greenness and social vulnerability across South Florida",
     summary:
-      "An interactive dashboard putting urban heat island intensity, vegetation cover and social vulnerability side by side across the South Florida metro — so you can see where the hottest, least green and least resourced areas overlap, which is where heat policy has to land first.",
+      "Interactive dashboard mapping urban heat island intensity, vegetation cover and social vulnerability across the South Florida metro, by census tract.",
     tags: ["Tableau", "Urban analytics", "Spatial join", "Social vulnerability"],
     links: [
       {
@@ -63,8 +62,8 @@ export const work = [
     image: "/work/extreme-heat.webp",
     imageAlt: "Cover of the Extreme Heat in Miami-Dade County ArcGIS StoryMap",
     summary:
-      "A public-facing ArcGIS StoryMap on the rising danger of extreme heat in Miami-Dade: what the trend actually means, which communities carry the most of it, and what interventions are available. Written for residents and decision-makers rather than for a GIS audience.",
-    note: "The precursor to the urban heat dashboard — narrative first, then the interactive tool.",
+      "ArcGIS StoryMap on extreme heat risk in Miami-Dade County: the trend, the populations most affected, and available interventions.",
+    credit: "Precursor to the urban heat dashboard.",
     tags: ["ArcGIS StoryMaps", "Heat exposure", "Science communication"],
     links: [
       {
@@ -80,9 +79,7 @@ export const work = [
     org: "University of Miami",
     year: "2026",
     summary:
-      "An interactive 3D scene of every building in the City of Miami Beach at risk of inundation by 2030, 2050 and 2090 under a moderate climate pathway, modelled from surface elevation and proximity to water bodies. Buildings are coloured by the decade they become exposed, which makes the timeline legible at a glance.",
-    note:
-      "Building-level rather than parcel-level, so a property owner can find their own address in it.",
+      "Interactive 3D scene of buildings in the City of Miami Beach at risk of inundation by 2030, 2050 and 2090, modelled from surface elevation and proximity to water bodies under a moderate climate pathway.",
     tags: ["ArcGIS Scene Viewer", "3D visualisation", "Inundation modelling", "DEM"],
     links: [
       {
@@ -101,9 +98,8 @@ export const work = [
     imageAlt:
       "Three suitability maps of California's Central Valley: baseline, SSP245 and SSP585 scenarios for 2050",
     summary:
-      "California grows roughly half of US vegetables and three quarters of its fruit and nuts, most of it in the Central Valley. This GIS multi-criteria evaluation combines WorldClim, SoilGrids, NLCD land cover, 3DEP elevation and NHD hydrology into a weighted suitability index, then re-runs it under SSP245 and SSP585 for 2050 and maps where suitability is gained, lost or holds.",
-    note:
-      "Cluster, outlier and hot-spot analysis on the difference surfaces, so the result is specific places rather than a national-scale shrug. With Devoux Deysel.",
+      "GIS multi-criteria evaluation of agricultural suitability, weighting WorldClim climate, SoilGrids soils, NLCD land cover, 3DEP elevation and NHD hydrology. Compares a baseline against SSP245 and SSP585 for 2050, with difference, cluster/outlier and hot-spot analysis.",
+    credit: "With Devoux Deysel.",
     tags: ["ArcGIS Pro", "Multi-criteria evaluation", "CMIP6 / SSP", "Hot-spot analysis"],
     links: [{ label: "Slides (PDF)", href: "/work/agricultural-suitability-gis.pdf" }],
   },
@@ -116,9 +112,9 @@ export const work = [
     image: "/work/classinsight.webp",
     imageAlt: "ClassInsight interface: starting a live or asynchronous assignment for a law class",
     summary:
-      "Responsive teaching is hard to do at scale — in a lecture hall you find out what landed after the exam. ClassInsight closes that loop: an instructor supplies a question, a model answer and the categories they care about, and gets back both an anonymous aggregate view of how the room did and individual feedback for each student. I owned project management for a small team taking it from concept through prototype and beta to an open-source release.",
-    note:
-      "Run live at the PETAL conference and in University of Miami law classes at batch sizes from 10 to 80, with accuracy improving on the larger cohorts. Finalist at AIREA 2025 in Hong Kong. With Or Cohen-Sasson and Roni Kennedy.",
+      "LLM-based real-time classroom feedback application. An educator submits a question, model response and categories; the app returns anonymous aggregate visuals and individual student feedback. Project lead from concept through prototype, beta and open-source release.",
+    credit:
+      "Run at the PETAL conference and in University of Miami law classes. Finalist, AIREA 2025. With Or Cohen-Sasson and Roni Kennedy.",
     tags: ["Agentic LLM", "OpenAI & Anthropic APIs", "Product management", "User research"],
     links: [
       { label: "Paper", href: "https://doi.org/10.21203/rs.3.rs-8078768/v1" },
@@ -133,12 +129,13 @@ export const work = [
     org: "Moffitt Cancer Center",
     year: "2025",
     summary:
-      "Led data collection strategy for a B2B health-tech platform, managing a small team sourcing and extracting clinical guideline text from NCCN, ASCO and MedlinePlus alongside clinical trial records — structured into a lightweight indexable search file and a richer source file for the Blue Scrubs virtual clinicians. Grew the corpus by 67%. Spearheaded evaluation of six state-of-the-art retrieval algorithms across a million medical records, building benchmark Q&A datasets with LLM inference to tune the RAG system.",
-    note:
-      "The deliverable wasn't the ranking — it was a benchmark the clinical team could re-run and argue with themselves.",
+      "Clinical guideline and trial data collection for a medical RAG system — NCCN, ASCO, MedlinePlus and clinical trial records, structured into indexable search files and fuller source files. Evaluated 6+ retrieval algorithms across 1M+ medical text records against benchmark Q&A datasets built with LLM inference.",
     tags: ["RAG evaluation", "Benchmark design", "Data strategy", "Team lead"],
     links: [
-      { label: "Dataset on Hugging Face", href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2" },
+      {
+        label: "Dataset on Hugging Face",
+        href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2",
+      },
       { label: "Project slides (PDF)", href: "/work/moffitt-blue-scrubs.pdf" },
     ],
   },
@@ -149,12 +146,13 @@ export const work = [
     org: "Moffitt Cancer Center",
     year: "2025",
     summary:
-      "Automating cancer-type labelling across Blue Scrubs v2.0 — 692B tokens, roughly ten times larger than any existing medical text dataset. Breast cancer as proof of concept: 100K documents sampled from 11.5M on medical-probability and relevance thresholds, narrowed by keyword bootstrapping to a balanced 30K training set, then TF-IDF over uni- and bi-grams into logistic regression. 86% accuracy and 0.94 ROC-AUC on hold-out, 82% accuracy at perfect precision out-of-sample, training in under three minutes on CPU.",
-    note:
-      "Deliberately the simplest model that met the bar — cheap to retrain, and legible to the people who had to trust it. I also quantified the data-leak risk before anyone asked: training touched 0.26% of v1.0, and under 0.1% of the v2.0 deployment target.",
+      "TF-IDF and logistic regression pipeline for cancer-type labelling across a 692B-token clinical corpus, trained on a balanced 30K set distilled from 11.5M documents by keyword bootstrapping. 86% accuracy and 0.94 ROC-AUC on hold-out; 82% accuracy at 1.00 precision out-of-sample.",
     tags: ["scikit-learn", "TF-IDF", "Dataset curation", "Evaluation"],
     links: [
-      { label: "Dataset on Hugging Face", href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2" },
+      {
+        label: "Dataset on Hugging Face",
+        href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2",
+      },
       { label: "Project slides (PDF)", href: "/work/moffitt-blue-scrubs.pdf" },
     ],
   },

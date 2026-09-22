@@ -3,8 +3,7 @@ import { education, experience } from "@/data/experience";
 export const Experience = () => (
   <section id="experience" className="border-b border-line bg-paper-alt py-20 md:py-28">
     <div className="shell">
-      <p className="eyebrow">Experience</p>
-      <h2 className="section-title mt-4 max-w-2xl">Where the work has happened</h2>
+      <h2 className="section-title">Experience</h2>
 
       <div className="mt-12">
         {experience.map((role) => (

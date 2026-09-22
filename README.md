@@ -19,7 +19,7 @@ change what the site says.
 | File | Holds |
 | --- | --- |
 | `src/data/contact.js` | Name, title, email, phone, links, location. Feeds the site, the vCard and the QR wallpapers. |
-| `src/data/site.js` | Hero line, the Approach narrative, the three capability cards, contact blurb. **This is the positioning layer.** |
+| `src/data/site.js` | Hero header, skill lists, contact line. Kept minimal on purpose. |
 | `src/data/work.js` | Selected work. `featured: true` gets the large treatment. |
 | `src/data/experience.js` | Roles and education. |
 | `src/data/publications.js` | Publications, recognition, certifications. |
@@ -53,9 +53,12 @@ or `public/work/` (decks and talks). Add an `href` to the matching entry in
 as a link to the document rather than an unbacked claim; entries without one
 render as plain text.
 
-**New project.** Copy any block in `src/data/work.js`. The only required fields
-are `slug`, `title`, `kind`, `org`, `year`, `summary` and `tags`; `note` and
-`links` are optional.
+**New project.** Copy any block in `src/data/work.js`. Required: `slug`,
+`title`, `kind`, `org`, `year`, `summary`, `tags`. Optional: `credit` (awards,
+collaborators, where it ran), `links`, `image`, `imageAlt`, `featured`.
+
+Descriptions are one or two factual sentences by design. Lengthen any of them
+whenever you want — nothing in the layout depends on them being short.
 
 After changing anything in `contact.js`, run `npm run assets` so the vCard and
 QR images stay in sync.
