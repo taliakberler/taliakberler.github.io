@@ -113,11 +113,18 @@ export const work = [
     kind: "Applied AI · Education",
     org: "Miami Law & AI Lab (MiLA)",
     year: "2024 — 2026",
+    image: "/work/classinsight.webp",
+    imageAlt: "ClassInsight interface: starting a live or asynchronous assignment for a law class",
     summary:
-      "An LLM-based real-time classroom-feedback application. I owned project management for a small team taking it from concept through prototype and beta to an open-source release, and ran demos for 25+ educators and 150+ law students to gather feedback and build AI literacy across the school.",
-    note: "Shortlisted finalist, AIREA 2025 (Hong Kong). Published in Research Square, 2026.",
+      "Responsive teaching is hard to do at scale — in a lecture hall you find out what landed after the exam. ClassInsight closes that loop: an instructor supplies a question, a model answer and the categories they care about, and gets back both an anonymous aggregate view of how the room did and individual feedback for each student. I owned project management for a small team taking it from concept through prototype and beta to an open-source release.",
+    note:
+      "Run live at the PETAL conference and in University of Miami law classes at batch sizes from 10 to 80, with accuracy improving on the larger cohorts. Finalist at AIREA 2025 in Hong Kong. With Or Cohen-Sasson and Roni Kennedy.",
     tags: ["Agentic LLM", "OpenAI & Anthropic APIs", "Product management", "User research"],
-    links: [{ label: "Paper", href: "https://doi.org/10.21203/rs.3.rs-8078768/v1" }],
+    links: [
+      { label: "Paper", href: "https://doi.org/10.21203/rs.3.rs-8078768/v1" },
+      { label: "Symposium talk (PDF)", href: "/work/classinsight-symposium.pdf" },
+      { label: "AIREA certificate", href: "/credentials/airea-2025-finalist.pdf" },
+    ],
   },
   {
     slug: "medical-rag",

@@ -1,6 +1,37 @@
 import { ArrowUpRight } from "lucide-react";
 import { certifications, publications, recognition } from "@/data/publications";
 
+/**
+ * A recognition or certification. Entries carrying an `href` link to the
+ * certificate itself, so the claim is checkable rather than just asserted.
+ * The year stays on its own column and the arrow rides the label, so a long
+ * title wraps without either one orphaning.
+ */
+const Credential = ({ item, sub }) => (
+  <li className="flex items-baseline justify-between gap-x-4">
+    <span className="min-w-0 flex-1 text-[0.9375rem]">
+      {item.href ? (
+        <a
+          href={item.href}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="text-ink underline decoration-green/30 underline-offset-[3px] transition-colors hover:text-green hover:decoration-green"
+        >
+          {item.label}
+          <ArrowUpRight className="ml-1 inline h-3 w-3 shrink-0 align-[-1px] text-green" />
+        </a>
+      ) : (
+        <span className="text-ink">{item.label}</span>
+      )}
+      {sub && <span className="text-ink-faint"> · {sub}</span>}
+    </span>
+
+    {item.year && (
+      <span className="shrink-0 font-sans text-xs tracking-wide text-ink-faint">{item.year}</span>
+    )}
+  </li>
+);
+
 export const Writing = () => (
   <section id="writing" className="border-b border-line py-20 md:py-28">
     <div className="shell">
@@ -39,15 +70,7 @@ export const Writing = () => (
           <p className="eyebrow">Recognition</p>
           <ul className="mt-5 space-y-3">
             {recognition.map((item) => (
-              <li key={item.label} className="flex flex-wrap items-baseline justify-between gap-x-4">
-                <span className="text-[0.9375rem] text-ink">
-                  {item.label}
-                  {item.detail && <span className="text-ink-faint"> · {item.detail}</span>}
-                </span>
-                {item.year && (
-                  <span className="font-sans text-xs tracking-wide text-ink-faint">{item.year}</span>
-                )}
-              </li>
+              <Credential key={item.label} item={item} sub={item.detail} />
             ))}
           </ul>
         </div>
@@ -56,13 +79,7 @@ export const Writing = () => (
           <p className="eyebrow">Certifications</p>
           <ul className="mt-5 space-y-3">
             {certifications.map((item) => (
-              <li key={item.label} className="flex flex-wrap items-baseline justify-between gap-x-4">
-                <span className="text-[0.9375rem] text-ink">
-                  {item.label}
-                  <span className="text-ink-faint"> · {item.issuer}</span>
-                </span>
-                <span className="font-sans text-xs tracking-wide text-ink-faint">{item.year}</span>
-              </li>
+              <Credential key={item.label} item={item} sub={item.issuer} />
             ))}
           </ul>
         </div>

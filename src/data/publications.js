@@ -41,15 +41,32 @@ export const publications = [
   },
 ];
 
+// `href` is optional on both lists — where it exists the entry links to the
+// certificate or the talk itself rather than just asserting it.
 export const recognition = [
-  { label: "Shortlisted Finalist, AIREA Competition", detail: "Hong Kong", year: "2025" },
+  {
+    label: "Finalist, AIREA International Competition on AI in Education",
+    detail: "Open Category · The Education University of Hong Kong",
+    year: "2025",
+    href: "/credentials/airea-2025-finalist.pdf",
+  },
+  {
+    label: "Oral Presenter, UM Graduate Research Symposium",
+    detail: "ClassInsight",
+    year: "2025",
+    href: "/work/classinsight-symposium.pdf",
+  },
   { label: "Phi Beta Kappa", detail: "University of Miami", year: "2025" },
-  { label: "Oral Presenter, UM Graduate Research Symposium", detail: "ClassInsight", year: "2025" },
-  { label: "President's & Provost's Honor Rolls", detail: "2022 — 2024", year: "" },
+  { label: "President's, Provost's & Dean's Lists", detail: "2022 — 2024", year: "" },
 ];
 
 export const certifications = [
-  { label: "GIS for Climate Action", issuer: "ESRI", year: "2026" },
+  {
+    label: "GIS for Climate Action",
+    issuer: "Esri · 6-week MOOC",
+    year: "2026",
+    href: "/credentials/esri-gis-climate-action.pdf",
+  },
   { label: "Data Science Practitioner", issuer: "IBM", year: "2025" },
   { label: "Enterprise Design Thinking Practitioner", issuer: "IBM", year: "2025" },
 ];

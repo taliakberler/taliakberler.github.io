@@ -47,6 +47,12 @@ The Miami Beach 3D scene is the one project still without a thumbnail — its
 ArcGIS item thumbnail is only 200×133 and the scene needs a real GPU to render,
 so a screenshot taken from your own browser is the way to fill it.
 
+**Certificates and evidence.** PDFs go in `public/credentials/` (certificates)
+or `public/work/` (decks and talks). Add an `href` to the matching entry in
+`recognition` or `certifications` in `src/data/publications.js` and it renders
+as a link to the document rather than an unbacked claim; entries without one
+render as plain text.
+
 **New project.** Copy any block in `src/data/work.js`. The only required fields
 are `slug`, `title`, `kind`, `org`, `year`, `summary` and `tags`; `note` and
 `links` are optional.
