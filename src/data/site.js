@@ -4,7 +4,8 @@
 export const hero = {
   eyebrow: "Climate Resilience · Geospatial Data Science",
   name: "Talia Berler",
-  meta: "Research Associate, Resilience Finance Lab · M.Sc. Data Science (Smart Cities & GIS), University of Miami · New York, NY",
+  meta: "Research Associate, Resilience Finance Lab · M.Sc. Data Science, University of Miami",
+  location: "New York, NY",
 };
 
 /** Groupings taken straight from the résumé. */

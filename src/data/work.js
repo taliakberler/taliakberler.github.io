@@ -110,7 +110,6 @@ export const work = [
       "Three suitability maps of California's Central Valley: baseline, SSP245 and SSP585 scenarios for 2050",
     summary:
       "GIS multi-criteria evaluation of agricultural suitability, weighting WorldClim climate, SoilGrids soils, NLCD land cover, 3DEP elevation and NHD hydrology. Compares a baseline against SSP245 and SSP585 for 2050, with difference, cluster/outlier and hot-spot analysis.",
-    credit: "With Devoux Deysel.",
     tags: ["ArcGIS Pro", "Multi-criteria evaluation", "CMIP6 / SSP", "Hot-spot analysis"],
     links: [{ label: "Slides (PDF)", href: "/work/agricultural-suitability-gis.pdf" }],
   },

@@ -1,5 +1,4 @@
-import { ArrowRight, FileText, Mail } from "lucide-react";
-import { SiGithub } from "@icons-pack/react-simple-icons";
+import { ArrowRight, FileText, Linkedin, Mail } from "lucide-react";
 import { hero } from "@/data/site";
 import { contact } from "@/data/contact";
 
@@ -23,10 +22,17 @@ export const Hero = () => (
 
 
       <p
-        className="mt-6 max-w-2xl animate-rise text-sm leading-relaxed text-ink-faint opacity-0"
+        className="mt-6 animate-rise text-sm text-ink-faint opacity-0"
         style={{ animationDelay: "180ms" }}
       >
         {hero.meta}
+      </p>
+
+      <p
+        className="mt-1.5 animate-rise text-sm text-ink-faint opacity-0"
+        style={{ animationDelay: "180ms" }}
+      >
+        {hero.location}
       </p>
 
       <div
@@ -46,13 +52,13 @@ export const Hero = () => (
           Email
         </a>
         <a
-          href={contact.github}
+          href={contact.linkedin}
           target="_blank"
           rel="noopener noreferrer"
-          aria-label="GitHub"
+          aria-label="LinkedIn"
           className="rounded-full border border-line p-3 text-ink-soft transition-colors hover:border-green/40 hover:text-green"
         >
-          <SiGithub className="h-4 w-4" />
+          <Linkedin className="h-4 w-4" />
         </a>
       </div>
     </div>
