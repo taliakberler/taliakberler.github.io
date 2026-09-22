@@ -12,7 +12,7 @@ lands on after scanning your QR code or tapping your shared contact.
 | `public/talia-berler.vcf` | Contact file — tapping "Save to Contacts" opens the phone's add-contact sheet. |
 | `public/qr/card-qr.svg` / `.png` | Plain QR of the card URL, for slides, print, email signatures, conference badges. |
 | `public/qr/wallpaper-lock.png` | Phone wallpaper, QR positioned below the lock-screen clock. |
-| `public/qr/wallpaper-plain.png` | Phone wallpaper, QR dead centre. |
+| `public/qr/wallpaper-plain.png` | Phone wallpaper, QR dead center. |
 | `public/favicon-{16,32,180,512}.png` | The TB monogram — browser tab, iOS home screen, bookmarks. |
 
 All generated files come from one script:
@@ -37,7 +37,7 @@ wallpapers stay in sync automatically.
 4. Test it: point another phone's camera at your locked screen. It should offer
    `taliakberler.github.io/card`.
 
-Use `wallpaper-plain.png` instead if you'd rather have it centred (better for a
+Use `wallpaper-plain.png` instead if you'd rather have it centered (better for a
 Home Screen with few icons, or for just sending the image to someone).
 
 ### 2. AirDrop / NameDrop (hold phones together)

@@ -4,21 +4,21 @@ import { SiGithub } from "@icons-pack/react-simple-icons";
 import { contact } from "@/data/contact";
 import { contactCopy } from "@/data/site";
 
-/** Sits on the dark band, so every colour here is paper-on-forest. */
+/** Sits on the dark band, so every color here is paper-on-forest. */
 const Row = ({ href, icon, label, value, external }) => (
   <a
     href={href}
     {...(external ? { target: "_blank", rel: "noopener noreferrer" } : {})}
-    className="group flex items-center gap-4 border-t border-paper/15 py-4"
+    className="group flex items-center gap-4 border-t border-on-forest/15 py-4"
   >
-    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-paper/20 text-green-light transition-colors group-hover:border-green-light/60 group-hover:bg-paper/10">
+    <span className="flex h-9 w-9 shrink-0 items-center justify-center rounded-full border border-on-forest/20 text-green-light transition-colors group-hover:border-green-light/60 group-hover:bg-on-forest/10">
       {icon}
     </span>
     <span className="min-w-0">
-      <span className="block font-sans text-xs uppercase tracking-[0.14em] text-paper/50">
+      <span className="block font-sans text-xs uppercase tracking-[0.14em] text-on-forest/50">
         {label}
       </span>
-      <span className="block truncate text-[0.9375rem] text-paper transition-colors group-hover:text-green-light">
+      <span className="block truncate text-[0.9375rem] text-on-forest transition-colors group-hover:text-green-light">
         {value}
       </span>
     </span>
@@ -26,24 +26,24 @@ const Row = ({ href, icon, label, value, external }) => (
 );
 
 export const Contact = () => (
-  <section id="contact" className="bg-forest py-20 text-paper md:py-28">
+  <section id="contact" className="bg-forest py-20 text-on-forest md:py-28">
     <div className="shell grid gap-14 md:grid-cols-2 md:gap-20">
       <div>
-        <h2 className="font-display text-3xl font-semibold leading-tight text-paper md:text-4xl">
+        <h2 className="font-display text-3xl font-semibold leading-tight text-on-forest md:text-4xl">
           {contactCopy.title}
         </h2>
-        <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-paper/70">
+        <p className="mt-5 max-w-md text-[0.9375rem] leading-relaxed text-on-forest/70">
           {contactCopy.body}
         </p>
 
-        <p className="mt-8 flex items-center gap-2 text-sm text-paper/60">
+        <p className="mt-8 flex items-center gap-2 text-sm text-on-forest/60">
           <MapPin className="h-4 w-4 text-green-light" />
           {contact.location}
         </p>
 
         <Link
           to="/card"
-          className="mt-8 inline-flex items-center gap-2 rounded-full border border-paper/25 px-5 py-2.5 text-sm font-medium text-paper transition-colors hover:border-paper/60 hover:bg-paper/10"
+          className="mt-8 inline-flex items-center gap-2 rounded-full border border-on-forest/25 px-5 py-2.5 text-sm font-medium text-on-forest transition-colors hover:border-on-forest/60 hover:bg-on-forest/10"
         >
           <QrCode className="h-4 w-4" />
           Digital business card
@@ -81,7 +81,7 @@ export const Contact = () => (
           href={contact.resume}
           external
           icon={<FileText className="h-4 w-4" />}
-          label="Résumé"
+          label="Resume"
           value="One page (PDF)"
         />
       </div>

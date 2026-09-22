@@ -8,7 +8,7 @@ export const hero = {
   location: "New York, NY",
 };
 
-/** Groupings taken straight from the résumé. */
+/** Groupings taken straight from the resume. */
 export const skills = [
   {
     title: "Languages & libraries",
@@ -30,7 +30,7 @@ export const skills = [
   },
   {
     title: "Coursework",
-    items: ["Geospatial analysis", "Network analysis", "Data visualisation", "Database systems"],
+    items: ["Geospatial analysis", "Network analysis", "Data visualization", "Database systems"],
   },
 ];
 

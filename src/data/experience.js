@@ -8,7 +8,7 @@ export const experience = [
     period: "Jun 2026 — present",
     current: true,
     points: [
-      "Leading design and build of the Resilience Finance Repository and Knowledge Graph — an AI-enriched literature collection and visualisation tracking climate resilience investment across the full value chain of interventions, to support evidence-based financing decisions.",
+      "Leading design and build of the Resilience Finance Repository and Knowledge Graph — an AI-enriched literature collection and visualization tracking climate resilience investment across the full value chain of interventions, to support evidence-based financing decisions.",
       "Supporting the launch of the Resilience Finance Lab, a CRI initiative connecting resilience practice to capital allocation: coordinated on-site logistics for a 50-attendee working session and compiled materials for a mixed practitioner and investor audience.",
     ],
   },
@@ -39,7 +39,7 @@ export const experience = [
     period: "May 2025 — Nov 2025",
     points: [
       "Led data collection strategy for a B2B health-tech SaaS, managing a small team sourcing and extracting clinical guideline text and increasing data volume by 67%.",
-      "Spearheaded evaluation of 6+ state-of-the-art retrieval algorithms across 1M+ medical text records, building benchmark medical Q&A datasets with LLM inference to optimise a clinical RAG system.",
+      "Spearheaded evaluation of 6+ state-of-the-art retrieval algorithms across 1M+ medical text records, building benchmark medical Q&A datasets with LLM inference to optimize a clinical RAG system.",
       "Developed an ML classification pipeline applying cancer-type labels to the largest publicly available annotated clinical text dataset, at 82% accuracy.",
     ],
   },
@@ -50,7 +50,7 @@ export const experience = [
     period: "Sep 2024 — Mar 2025",
     points: [
       "Delivered sprint-based analytics for third-party clients, including companies and faculty researchers.",
-      "Built a genetics-based product optimisation algorithm with feature ranking and multi-generational tracking.",
+      "Built a genetics-based product optimization algorithm with feature ranking and multi-generational tracking.",
     ],
   },
 ];

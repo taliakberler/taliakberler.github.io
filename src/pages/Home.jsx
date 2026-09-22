@@ -1,4 +1,5 @@
 import { SiteHeader } from "@/components/SiteHeader";
+import { Fireflies } from "@/components/Fireflies";
 import { Hero } from "@/components/Hero";
 import { Skills } from "@/components/Skills";
 import { Work } from "@/components/Work";
@@ -9,8 +10,9 @@ import { SiteFooter } from "@/components/SiteFooter";
 
 export const Home = () => (
   <>
+    <Fireflies />
     <SiteHeader />
-    <main>
+    <main className="relative z-10">
       <Hero />
       <Skills />
       <Work />
@@ -18,6 +20,8 @@ export const Home = () => (
       <Writing />
       <Contact />
     </main>
-    <SiteFooter />
+    <div className="relative z-10">
+      <SiteFooter />
+    </div>
   </>
 );

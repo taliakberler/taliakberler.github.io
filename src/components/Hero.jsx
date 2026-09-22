@@ -45,7 +45,7 @@ export const Hero = () => (
         </a>
         <a href={contact.resume} target="_blank" rel="noopener noreferrer" className="btn-ghost">
           <FileText className="h-4 w-4" />
-          Résumé
+          Resume
         </a>
         <a href={`mailto:${contact.email}`} className="btn-ghost">
           <Mail className="h-4 w-4" />

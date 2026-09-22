@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import { cn } from "@/lib/utils";
+import { ThemeToggle } from "./ThemeToggle";
 
 const navItems = [
   { label: "Skills", href: "#skills" },
@@ -42,12 +43,15 @@ export const SiteHeader = () => {
           ))}
         </nav>
 
-        <a
-          href="#contact"
-          className="rounded-full border border-green/35 px-4 py-1.5 text-sm font-medium text-green transition-colors hover:border-green hover:bg-green-wash"
-        >
-          Get in touch
-        </a>
+        <div className="flex items-center gap-2">
+          <a
+            href="#contact"
+            className="rounded-full border border-green/35 px-4 py-1.5 text-sm font-medium text-green transition-colors hover:border-green hover:bg-green-wash"
+          >
+            Get in touch
+          </a>
+          <ThemeToggle />
+        </div>
       </div>
     </header>
   );

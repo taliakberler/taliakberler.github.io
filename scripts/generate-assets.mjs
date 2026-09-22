@@ -4,7 +4,7 @@
  *   public/qr/card-qr.svg          - clean QR of the card URL (print, slides, badges)
  *   public/qr/card-qr.png          - same, 1200px raster
  *   public/qr/wallpaper-lock.png   - phone wallpaper, QR below the lock-screen clock
- *   public/qr/wallpaper-plain.png  - phone wallpaper, QR dead centre
+ *   public/qr/wallpaper-plain.png  - phone wallpaper, QR dead center
  *
  * Run with: npm run assets
  */
@@ -22,7 +22,7 @@ mkdirSync(out("public/qr"), { recursive: true });
 /* ---------------------------------------------------------------- vCard -- */
 
 // vCard 3.0: the version Apple Contacts, Google Contacts and Outlook all agree on.
-// item{n}.URL + item{n}.X-ABLabel is Apple's way of labelling links; other apps
+// item{n}.URL + item{n}.X-ABLabel is Apple's way of labeling links; other apps
 // safely ignore the prefix and still show the URL.
 const vcard = () => {
   const lines = [
@@ -102,7 +102,7 @@ await sharp(Buffer.from(standaloneSvg)).png().toFile(out("public/qr/card-qr.png"
 const monogram = ({ size, bleed }) => {
   const r = bleed ? 0 : Math.round(size * 0.22);
   const fontSize = size * 0.545;
-  // Georgia's cap height is ~0.692em; centre the caps rather than the em box.
+  // Georgia's cap height is ~0.692em; center the caps rather than the em box.
   const baseline = size / 2 + (fontSize * 0.692) / 2;
 
   return `<svg xmlns="http://www.w3.org/2000/svg" width="${size}" height="${size}" viewBox="0 0 ${size} ${size}">
@@ -121,7 +121,7 @@ const iconTargets = [
 ];
 
 for (const { file, size, bleed } of iconTargets) {
-  // Rasterise from a large master so the small sizes stay sharp.
+  // Rasterize from a large master so the small sizes stay sharp.
   await sharp(Buffer.from(monogram({ size: 512, bleed: Boolean(bleed) })))
     .resize(size, size)
     .png()
@@ -176,7 +176,7 @@ const wallpaperSvg = (panelTop) => {
 
 // Lock screen: sits below the clock, above the flashlight/camera row.
 await sharp(Buffer.from(wallpaperSvg(1080))).png().toFile(out("public/qr/wallpaper-lock.png"));
-// Plain: centred, for the Home Screen or for sending as an image.
+// Plain: centered, for the Home Screen or for sending as an image.
 await sharp(Buffer.from(wallpaperSvg(Math.round(H / 2 - 560)))).png().toFile(out("public/qr/wallpaper-plain.png"));
 
 console.log(`QR encodes: ${CARD_URL}`);

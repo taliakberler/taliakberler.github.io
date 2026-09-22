@@ -75,7 +75,7 @@ export const Card = () => {
       url: CARD_URL,
     };
     if (navigator.share) {
-      // A cancelled share sheet rejects; that isn't an error worth surfacing.
+      // A canceled share sheet rejects; that isn't an error worth surfacing.
       try {
         await navigator.share(data);
       } catch {
@@ -154,7 +154,7 @@ export const Card = () => {
           <LinkRow
             href={contact.resume}
             icon={<FileText className="h-4 w-4" />}
-            label="Résumé"
+            label="Resume"
             value="One page (PDF)"
           />
           <LinkRow
@@ -189,7 +189,7 @@ export const Card = () => {
         >
           <button
             aria-label="Close QR code"
-            className="absolute right-5 top-5 rounded-full p-2 text-paper/70 transition-colors hover:text-paper"
+            className="absolute right-5 top-5 rounded-full p-2 text-on-forest/70 transition-colors hover:text-on-forest"
           >
             <X className="h-6 w-6" />
           </button>
@@ -198,7 +198,7 @@ export const Card = () => {
             alt={`QR code linking to ${CARD_URL}`}
             className="w-full max-w-xs rounded-2xl bg-paper p-4"
           />
-          <p className="mt-7 font-sans text-xs uppercase tracking-[0.2em] text-paper/70">
+          <p className="mt-7 font-sans text-xs uppercase tracking-[0.2em] text-on-forest/70">
             Scan to connect
           </p>
         </div>

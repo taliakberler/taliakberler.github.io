@@ -33,9 +33,9 @@ export const work = [
     imageAlt:
       "Resilience Finance Repository overview page, showing record count, date range, finance themes and case studies",
     summary:
-      "A curated library of how risk reduction and resilience get funded, built for practitioners — project proponents, underwriters and capital allocators. Academic research, case studies, deal profiles and media coverage across 12 finance themes, each record scored against four inclusion criteria and summarised with AI.",
+      "A curated library of how risk reduction and resilience get funded, built for practitioners — project proponents, underwriters and capital allocators. Academic research, case studies, deal profiles and media coverage across 12 finance themes, each record scored against four inclusion criteria and summarized with AI.",
     credit:
-      "Beta: 508 records from 577 organisations, published 2012–2026, as of September 2026. The Knowledge Explorer, which maps instruments to interventions, benefits and hazards, is in development.",
+      "Beta: 508 records from 577 organizations, published 2012–2026, as of September 2026. The Knowledge Explorer, which maps instruments to interventions, benefits and hazards, is in development.",
     tags: ["LLM enrichment", "Knowledge graph", "Curation", "Stakeholder research"],
     links: [
       { label: "Explore the repository", href: "https://resilience-finance-repository.github.io/" },
@@ -91,7 +91,7 @@ export const work = [
     year: "2026",
     summary:
       "Interactive 3D scene of buildings in the City of Miami Beach at risk of inundation by 2030, 2050 and 2090, modelled from surface elevation and proximity to water bodies under a moderate climate pathway.",
-    tags: ["ArcGIS Scene Viewer", "3D visualisation", "Inundation modelling", "DEM"],
+    tags: ["ArcGIS Scene Viewer", "3D visualization", "Inundation modeling", "DEM"],
     links: [
       {
         label: "Explore the 3D scene",
@@ -156,7 +156,7 @@ export const work = [
     org: "Moffitt Cancer Center",
     year: "2025",
     summary:
-      "TF-IDF and logistic regression pipeline for cancer-type labelling across a 692B-token clinical corpus, trained on a balanced 30K set distilled from 11.5M documents by keyword bootstrapping. 86% accuracy and 0.94 ROC-AUC on hold-out; 82% accuracy at 1.00 precision out-of-sample.",
+      "TF-IDF and logistic regression pipeline for cancer-type labeling across a 692B-token clinical corpus, trained on a balanced 30K set distilled from 11.5M documents by keyword bootstrapping. 86% accuracy and 0.94 ROC-AUC on hold-out; 82% accuracy at 1.00 precision out-of-sample.",
     tags: ["scikit-learn", "TF-IDF", "Dataset curation", "Evaluation"],
     links: [
       {
