@@ -29,10 +29,21 @@ export const work = [
     kind: "Product · Knowledge systems",
     org: "Climate Resilience Institute",
     year: "2025 — present",
+    image: "/work/resilience-finance-repository.webp",
+    imageAlt:
+      "Resilience Finance Repository overview page, showing record count, date range, finance themes and case studies",
     summary:
-      "An AI-enriched literature collection and visualisation tracking climate resilience investment across the full value chain of interventions, supporting evidence-based financing decisions at the Resilience Finance Lab.",
-    tags: ["LLM enrichment", "Knowledge graph", "Retrieval", "Stakeholder research"],
-    links: [],
+      "A curated library of how risk reduction and resilience get funded, built for practitioners — project proponents, underwriters and capital allocators. Academic research, case studies, deal profiles and media coverage across 12 finance themes, each record scored against four inclusion criteria and summarised with AI.",
+    credit:
+      "Beta: 508 records from 577 organisations, published 2012–2026, as of September 2026. The Knowledge Explorer, which maps instruments to interventions, benefits and hazards, is in development.",
+    tags: ["LLM enrichment", "Knowledge graph", "Curation", "Stakeholder research"],
+    links: [
+      { label: "Explore the repository", href: "https://resilience-finance-repository.github.io/" },
+      {
+        label: "Resilience Finance Lab",
+        href: "https://resilience.miami.edu/initiatives/rfl/knowledge-graph/index.html",
+      },
+    ],
   },
   {
     slug: "uhi-tableau",
