@@ -126,12 +126,13 @@ export const work = [
     org: "Moffitt Cancer Center",
     year: "2025",
     summary:
-      "Led data collection strategy for a B2B health-tech platform, managing a small team sourcing and extracting clinical guideline text and growing the corpus by 67%. Spearheaded evaluation of six state-of-the-art retrieval algorithms across a million medical records, building benchmark Q&A datasets with LLM inference to tune a clinical RAG system.",
+      "Led data collection strategy for a B2B health-tech platform, managing a small team sourcing and extracting clinical guideline text from NCCN, ASCO and MedlinePlus alongside clinical trial records — structured into a lightweight indexable search file and a richer source file for the Blue Scrubs virtual clinicians. Grew the corpus by 67%. Spearheaded evaluation of six state-of-the-art retrieval algorithms across a million medical records, building benchmark Q&A datasets with LLM inference to tune the RAG system.",
     note:
       "The deliverable wasn't the ranking — it was a benchmark the clinical team could re-run and argue with themselves.",
     tags: ["RAG evaluation", "Benchmark design", "Data strategy", "Team lead"],
     links: [
-      { label: "Dataset", href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2" },
+      { label: "Dataset on Hugging Face", href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2" },
+      { label: "Project slides (PDF)", href: "/work/moffitt-blue-scrubs.pdf" },
     ],
   },
   {
@@ -141,10 +142,13 @@ export const work = [
     org: "Moffitt Cancer Center",
     year: "2025",
     summary:
-      "A TF-IDF and logistic regression pipeline applying cancer-type labels to the largest publicly available annotated clinical text dataset, at 82% accuracy and training in under three minutes on CPU.",
+      "Automating cancer-type labelling across Blue Scrubs v2.0 — 692B tokens, roughly ten times larger than any existing medical text dataset. Breast cancer as proof of concept: 100K documents sampled from 11.5M on medical-probability and relevance thresholds, narrowed by keyword bootstrapping to a balanced 30K training set, then TF-IDF over uni- and bi-grams into logistic regression. 86% accuracy and 0.94 ROC-AUC on hold-out, 82% accuracy at perfect precision out-of-sample, training in under three minutes on CPU.",
     note:
-      "Deliberately the simplest model that met the bar — cheap to retrain, and legible to the people who had to trust it.",
+      "Deliberately the simplest model that met the bar — cheap to retrain, and legible to the people who had to trust it. I also quantified the data-leak risk before anyone asked: training touched 0.26% of v1.0, and under 0.1% of the v2.0 deployment target.",
     tags: ["scikit-learn", "TF-IDF", "Dataset curation", "Evaluation"],
-    links: [],
+    links: [
+      { label: "Dataset on Hugging Face", href: "https://huggingface.co/datasets/TheBlueScrubs/TheBlueScrubs-v2" },
+      { label: "Project slides (PDF)", href: "/work/moffitt-blue-scrubs.pdf" },
+    ],
   },
 ];
