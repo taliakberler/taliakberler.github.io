@@ -15,7 +15,7 @@ import {
 } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { useToast } from "@/hooks/use-toast";
-import { contact, CARD_URL, resumeLink } from "@/data/contact";
+import { contact, CARD_URL } from "@/data/contact";
 
 const VCARD_URL = "/talia-berler.vcf";
 const QR_URL = "/qr/card-qr.svg";
@@ -152,10 +152,10 @@ export const Card = () => {
             value="@taliakberler"
           />
           <LinkRow
-            href={resumeLink.href}
+            href={contact.resume}
             icon={<FileText className="h-4 w-4" />}
-            label={resumeLink.label}
-            value={resumeLink.note}
+            label="Résumé"
+            value="One page (PDF)"
           />
           <LinkRow
             href={contact.website}

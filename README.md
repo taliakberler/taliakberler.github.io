@@ -27,12 +27,13 @@ change what the site says.
 ## Adding your files
 
 **Résumé.** Lives at `public/TaliaBerlerResume.pdf`. To swap it, replace that
-file and keep the name. If you ever remove it, set `hasResume: false` in
-`src/data/contact.js` and every "Résumé" link falls back to the full CV rather
-than 404ing.
+file and keep the name — the site, the /card page and the vCard all point at
+that one path.
 
-**Updated CV.** Replace `public/TaliaBerlerCV.pdf` — the filename is referenced
-in a few places, so keep the name.
+**Long-form CV.** Not published. The site's Experience and Publications
+sections carry everything the old CV did, and more currently. To bring one
+back: drop the PDF in `public/`, add a `cv` field to `src/data/contact.js`, and
+add a row to `src/components/Contact.jsx`.
 
 **Project images.** Put them in `public/work/` and add `image` plus `imageAlt`
 to the relevant entry in `src/data/work.js`. Entries without an image render as

@@ -20,16 +20,6 @@ export const contact = {
   phoneDisplay: "+1 (305) 710-2434",
   linkedin: "https://www.linkedin.com/in/talia-berler",
   github: "https://github.com/taliakberler",
-  hasResume: true,
   resume: `${SITE_URL}/TaliaBerlerResume.pdf`,
-  cv: `${SITE_URL}/TaliaBerlerCV.pdf`,
   website: SITE_URL,
 };
-
-/**
- * Which document to link where. Until a one-page résumé exists in public/,
- * every "Résumé" affordance quietly points at the full CV instead of 404ing.
- */
-export const resumeLink = contact.hasResume
-  ? { href: contact.resume, label: "Résumé", note: "One page (PDF)" }
-  : { href: contact.cv, label: "CV", note: "Full CV (PDF)" };

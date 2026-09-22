@@ -77,21 +77,12 @@ export const Contact = () => (
           label="GitHub"
           value="github.com/taliakberler"
         />
-        {contact.hasResume && (
-          <Row
-            href={contact.resume}
-            external
-            icon={<FileText className="h-4 w-4" />}
-            label="Résumé"
-            value="One page (PDF)"
-          />
-        )}
         <Row
-          href={contact.cv}
+          href={contact.resume}
           external
           icon={<FileText className="h-4 w-4" />}
-          label="Full CV"
-          value="Publications & detail (PDF)"
+          label="Résumé"
+          value="One page (PDF)"
         />
       </div>
     </div>

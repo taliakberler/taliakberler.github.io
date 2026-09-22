@@ -1,7 +1,7 @@
 import { ArrowRight, FileText, Mail } from "lucide-react";
 import { SiGithub } from "@icons-pack/react-simple-icons";
 import { hero } from "@/data/site";
-import { contact, resumeLink } from "@/data/contact";
+import { contact } from "@/data/contact";
 
 export const Hero = () => (
   <section id="top" className="relative overflow-hidden border-b border-line">
@@ -37,9 +37,9 @@ export const Hero = () => (
           See selected work
           <ArrowRight className="h-4 w-4" />
         </a>
-        <a href={resumeLink.href} target="_blank" rel="noopener noreferrer" className="btn-ghost">
+        <a href={contact.resume} target="_blank" rel="noopener noreferrer" className="btn-ghost">
           <FileText className="h-4 w-4" />
-          {resumeLink.label}
+          Résumé
         </a>
         <a href={`mailto:${contact.email}`} className="btn-ghost">
           <Mail className="h-4 w-4" />

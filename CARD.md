@@ -24,9 +24,6 @@ npm run assets
 Edit `src/data/contact.js`, re-run that, commit. The QR, the vCard and both
 wallpapers stay in sync automatically.
 
-The vCard only advertises a résumé once `hasResume` is `true` in
-`src/data/contact.js` — see the "Adding your files" section of the README.
-
 ## Setting it up on your phone (one time)
 
 ### 1. The wallpaper QR
